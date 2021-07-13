@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://src/game.gd" type="Script" id=1]
+[ext_resource path="res://assets/cards/card_back.svg" type="Texture" id=2]
 
 [node name="Game" type="Control"]
 anchor_right = 1.0
@@ -10,7 +11,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0.215686, 0.215686, 0.215686, 1 )
@@ -18,14 +19,37 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Grid" type="GridContainer" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 40.0
-margin_top = 40.0
-margin_right = -40.0
-margin_bottom = -40.0
-columns = 13
+[node name="DrawPile" type="TextureButton" parent="."]
+margin_left = 400.304
+margin_top = 275.317
+margin_right = 533.304
+margin_bottom = 474.317
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 2 )
+texture_disabled = ExtResource( 2 )
+texture_focused = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Playpile" type="Control" parent="."]
+margin_left = 552.0
+margin_top = 278.0
+margin_right = 709.0
+margin_bottom = 485.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hand" type="HBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -191.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_down" from="DrawPile" to="." method="_on_DrawPile_button_down"]

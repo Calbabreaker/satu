@@ -4,15 +4,12 @@
 [ext_resource path="res://assets/cards/card_background.svg" type="Texture" id=2]
 [ext_resource path="res://assets/cards/card_front.svg" type="Texture" id=5]
 
-[node name="Card" type="TextureRect"]
+[node name="Card" type="TextureButton"]
 margin_left = 0.210205
-margin_right = 223.21
-margin_bottom = 294.0
-texture = ExtResource( 2 )
+margin_right = 133.21
+margin_bottom = 199.0
+texture_normal = ExtResource( 2 )
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Front" type="TextureRect" parent="."]
 modulate = Color( 1, 0, 1, 1 )
@@ -34,3 +31,6 @@ __meta__ = {
 margin_top = 0.943878
 margin_right = 133.0
 margin_bottom = 199.944
+__meta__ = {
+"_edit_use_anchors_": false
+}
