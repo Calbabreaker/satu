@@ -4,8 +4,7 @@ var card_scene := preload("res://src/card/card.tscn")
 var card_played: Node
 
 func _ready():
-	card_played = instance_card()
-	$Playpile.add_child(card_played)
+	add_playpile(instance_card())
 	randomize()
 
 func _on_DrawPile_button_down() -> void:
@@ -28,16 +27,19 @@ func play_card(card: Node) -> void:
 		card_played.queue_free()
 		$Hand.remove_child(card)
 		update_hand_spacing()
-		
-		$Playpile.add_child(card)
-		card.rect_position.x = 0
-		card.disconnect("button_down", self, "_on_Card_button_down")
-		card_played = card
+
+		add_playpile(card)
+
+func add_playpile(card: Node) -> void:
+	$Playpile.add_child(card)
+	card.rect_position.x = 0
+	card.disconnect("button_down", self, "_on_Card_button_down")
+	card_played = card
 
 func instance_card() -> Node:
 	var color_index := randi() % 4
-	# only supports 0-3 card types right now
-	var type := str(randi() % 4)
+	# only supports 0-4 card types right now
+	var type := str(randi() % 5)
 	var card = card_scene.instance().init(type, color_index)
 	card.connect("button_down", self, "_on_Card_button_down", [card])
 	return card

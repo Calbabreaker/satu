@@ -21,14 +21,14 @@
      inkscape:pagecheckerboard="1"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="4"
-     inkscape:cx="56.375"
-     inkscape:cy="93.5"
-     inkscape:window-width="1920"
-     inkscape:window-height="1045"
-     inkscape:window-x="0"
-     inkscape:window-y="35"
-     inkscape:window-maximized="1"
+     inkscape:zoom="2"
+     inkscape:cx="85.25"
+     inkscape:cy="98.25"
+     inkscape:window-width="1362"
+     inkscape:window-height="760"
+     inkscape:window-x="1920"
+     inkscape:window-y="312"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg6"
      inkscape:lockguides="false" />
   <defs
@@ -68,9 +68,31 @@
   <ellipse
      style="fill:#dd0000;fill-opacity:1;stroke:none;stroke-width:1.09698"
      id="path34062"
-     cx="-34.272083"
+     cx="-34.272079"
      cy="79.927773"
      rx="56.254681"
      ry="33.083855"
      transform="matrix(0.47275972,-0.88119138,0.82834078,0.56022456,0,0)" />
+  <g
+     aria-label="SATU"
+     transform="matrix(0.88718353,-0.27706728,0.27706728,0.88718353,61.53191,-7.375472)"
+     id="text1970"
+     style="font-weight:bold;font-size:30px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';fill:#d66300;fill-opacity:1;stroke:none;stroke-width:0.75">
+    <path
+       d="m -67.589566,92.157803 c 5.07,0 8.13,-2.52 8.13,-6.42 0,-7.53 -10.95,-4.92 -10.95,-9.12 0,-1.59 1.44,-2.49 4.05,-2.49 1.71,0 3.6,0.33 5.1,0.9 l 1.11,-3.06 c -1.77,-0.78 -3.93,-1.23 -6,-1.23 -4.95,0 -8.28,2.55 -8.28,6.48 0,7.11 10.92,4.77 10.92,9 0,1.53 -1.35,2.46 -3.9,2.46 -1.89,0 -4.2,-0.42 -6.27,-1.29 l -1.11,3.12 c 2.22,1.02 4.8,1.65 7.2,1.65 z"
+       id="path5244"
+       style="fill:#d66300;fill-opacity:1;stroke:none" />
+    <path
+       d="m -58.529568,91.857803 h 4.11 l 1.71,-5.22 h 7.98 l 1.68,5.22 h 4.29 l -7.2,-20.82 h -4.98 z m 6.93,-8.67 2.88,-8.82 2.88,8.82 z"
+       id="path5246"
+       style="fill:#d66300;fill-opacity:1;stroke:none" />
+    <path
+       d="m -31.829613,91.857803 h 3.81 v -17.43 h 6.72 v -3.39 h -17.22 v 3.39 h 6.69 z"
+       id="path5248"
+       style="fill:#d66300;fill-opacity:1;stroke:none" />
+    <path
+       d="m -10.799625,92.157803 c 5.2800001,0 8.7300001,-3.3 8.7300001,-8.31 v -12.81 h -3.81 v 13.26 c 0,2.82 -1.65,4.5 -4.4700001,4.5 -3.09,0 -4.89,-1.89 -4.89,-5.04 v -12.72 h -3.87 v 13.02 c 0,4.98 3.18,8.1 8.31,8.1 z"
+       id="path5250"
+       style="fill:#d66300;fill-opacity:1;stroke:none" />
+  </g>
 </svg>
